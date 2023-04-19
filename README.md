@@ -19,3 +19,31 @@ This program sorts data on a stack, using radix, with a limited set of operation
  - rra (reverse rotate a): Shift down all elements of stack a by 1. The last element becomes the first one.
  - rrb (reverse rotate b): Shift down all elements of stack b by 1. The last element becomes the first one.
  - rrr : rra and rrb at the same time.
+
+***How to example:***
+ - make
+ - ./push_swap "4" 45 2 "900 3 5"
+    ~ node: 4 | index: 2
+    ~ node: 45 | index: 3
+    ~ node: 2 | index: 0
+    ~ node: 900 | index: 4
+    ~ node: 3 | index: 1
+    ~ ra
+    ~ ra
+    ~ pb
+    ~ ra
+    ~ pb
+    ~ pa
+    ~ pa
+    ~ node: 2 | index: 0
+    ~ node: 3 | index: 1
+    ~ node: 4 | index: 2
+    ~ node: 45 | index: 3
+    ~ node: 900 | index: 4
+    ~ // returns the initalized list, the necessary operations needed to sort the given arguments, the sorted list
+ - make bonus
+ - ./checker "4" 45 "1"
+ - rra
+ - Ctrl+D
+     ~ OK
+     ~ // the checker program takes the given operations and returns 'OK' or 'KO' or 'Error'
