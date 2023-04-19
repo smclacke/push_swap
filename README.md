@@ -1,7 +1,7 @@
 # push_swap
 
 
-### ***Because Swap_push isn’t as natural***
+### ***Because swap_push isn’t as natural***
 
 ### This program sorts data on a stack, using radix, with a limited set of operations. The goal is to use the lowest possible number of actions.
 
