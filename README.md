@@ -22,8 +22,8 @@ This program sorts data on a stack, using radix, with a limited set of operation
 
 ***How to example:***
 
- - make
- - ./push_swap "4" 45 2 "900 3"
+ - $make
+ - $./push_swap "4" 45 2 "900 3"
  -   ~> node: 4 | index: 2
  -   ~> node: 45 | index: 3
  -   ~> node: 2 | index: 0
@@ -45,10 +45,10 @@ This program sorts data on a stack, using radix, with a limited set of operation
  
  ***How to checker example:***
  
- - make bonus
- - ./checker "4" 45 "1"
- - rra
- - Ctrl+D
+ - $make bonus
+ - $./checker "4" 45 "1"
+ - $rra
+ - $Ctrl+D
  -    ~> OK
  -    ~ // the checker program takes the given operations and returns 'OK' or 'KO' or 'Error'
  
