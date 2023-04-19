@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/30 22:31:32 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/19 15:51:07 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/19 17:15:10 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,31 +62,28 @@ int	valid_input(char *argv)
 	return (1);
 }
 
-t_stack	*create_stack(int argc, char **argv)
+t_stack	*node_new(int node)
 {
-	int			i;
-	int			j;
-	long		argv_tmp;
-	char		**arr;
-	t_stack		*stack_a;
+	t_stack	*new;
 
-	i = 1;
-	stack_a = NULL;
-	while (i < argc)
+	new = malloc(sizeof(t_stack));
+	if (!new)
+		return (0);
+	new->num = node;
+	new->index = 0;
+	new->next = NULL;
+	return (new);
+}
+
+t_stack	*ft_print_stack(t_stack *stack)
+{
+	t_stack	*list;
+
+	list = stack;
+	while (list)
 	{
-		j = 0;
-		arr = ft_split(argv[i], ' ');
-		while (arr[j])
-		{
-			argv_tmp = ft_atoi(arr[j]);
-			if ((argv_tmp < INT_MIN || argv_tmp > INT_MAX)
-				|| (!valid_input(arr[j])))
-				ft_error();
-			j++;
-			var_to_stack(&stack_a, argv_tmp);
-		}
-		ft_free_arr(arr);
-		i++;
+		printf("node: %d | index: %d\n", list->num, list->index);
+		list = list->next;
 	}
-	return (stack_a);
+	return (stack);
 }

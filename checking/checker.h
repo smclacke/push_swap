@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/13 19:35:57 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/19 15:57:12 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/19 17:16:23 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,16 +43,17 @@ void		ft_rrb(t_stack **stack);
 void		ft_rrr(t_stack **stack_a, t_stack **stack_b);
 
 //-------------Init--------------//
-t_stack		*node_new(int value);
 void		list_index(t_stack *stack, int list_size);
 void		var_to_stack(t_stack **stack, int var);
-t_stack		*init_list(int argc, char **argv);
+void		ft_stacking(char **arr, t_stack **stack_a);
+t_stack		*create_stack(int argc, char **argv);
 int			ft_sorted(t_stack **stack);
 
 //-------------Utils-------------//
 void		free_stack(t_stack **stack);
 void		dup_input(t_stack *stack);
 int			valid_input(char *argv);
-t_stack		*create_stack(int argc, char **argv);
+t_stack		*node_new(int value);
+t_stack		*ft_print_stack(t_stack *stack);
 
 #endif
