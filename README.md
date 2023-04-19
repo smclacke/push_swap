@@ -5,7 +5,7 @@
 
 ### ***Because swap_push isn’t as natural***
 
-### This program sorts data on a stack, using radix, with a limited set of operations. The goal is to use the lowest possible number of actions.
+This program sorts data on a stack, using radix, with a limited set of operations. The goal is to use the lowest possible number of actions.
 
  ***Operations include:***
  - sa (swap a): Swap the first 2 elements at the top of stack a.
