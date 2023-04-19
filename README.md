@@ -1,7 +1,7 @@
 # push_swap
 
 <img width="1280" alt="Screenshot 2023-04-19 at 04 09 45" src="https://user-images.githubusercontent.com/115113929/232948436-054f86ed-46a7-4306-b589-3948581fad64.png">
-_push_swap visualizer: https://github.com/o-reo/push_swap_visualizer_ 💫
+💫 push_swap visualizer: https://github.com/o-reo/push_swap_visualizer 💫
 
 ### ***Because swap_push isn’t as natural***
 
