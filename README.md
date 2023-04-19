@@ -47,3 +47,5 @@ This program sorts data on a stack, using radix, with a limited set of operation
  - Ctrl+D
  -    ~ OK
  -    ~ // the checker program takes the given operations and returns 'OK' or 'KO' or 'Error'
+ - // Will give Error in the case of invalid or duplicate input
+ - // KO if the list isn't sorted by the given operations
