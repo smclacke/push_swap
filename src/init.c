@@ -6,24 +6,11 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 17:45:35 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/18 22:52:52 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/19 16:51:18 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-t_stack	*node_new(int node)
-{
-	t_stack	*new;
-
-	new = malloc(sizeof(t_stack));
-	if (!new)
-		return (0);
-	new->num = node;
-	new->index = 0;
-	new->next = NULL;
-	return (new);
-}
 
 void	list_index(t_stack *stack, int list_size)
 {
@@ -60,4 +47,41 @@ void	var_to_stack(t_stack **stack, int var)
 		node = node->next;
 	new = node_new(var);
 	node->next = new;
+}
+
+void	ft_stacking(char **arr, t_stack **stack_a)
+{
+	int		j;
+	long	argv_tmp;
+
+	j = 0;
+	while (arr[j])
+	{
+		argv_tmp = ft_atoi(arr[j]);
+		if ((argv_tmp < INT_MIN || argv_tmp > INT_MAX)
+			|| (!valid_input(arr[j])))
+			ft_error();
+		j++;
+		var_to_stack(stack_a, argv_tmp);
+	}
+}
+
+t_stack	*create_stack(int argc, char **argv)
+{
+	int			i;
+	char		**arr;
+	t_stack		*stack_a;
+
+	i = 1;
+	stack_a = NULL;
+	while (i < argc)
+	{
+		arr = ft_split(argv[i], ' ');
+		if (!arr || !arr[0])
+			ft_error();
+		ft_stacking(arr, &stack_a);
+		ft_free_arr(arr);
+		i++;
+	}
+	return (stack_a);
 }

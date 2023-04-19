@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/13 19:26:34 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/19 03:22:12 by SarahLouise   ########   odam.nl         */
+/*   Updated: 2023/04/19 15:52:12 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int	main(int argc, char **argv)
 	stack_a = create_stack(argc, argv);
 	stack_b = NULL;
 	dup_input(stack_a);
-	list_index(stack_a, ft_lstsize((t_list *)stack_b));
+	list_index(stack_a, ft_lstsize((t_list *)stack_a));
 	handle_input(&stack_a, &stack_b);
 	if (ft_sorted(&stack_a) && !stack_b)
 		ft_putendl("OK");
