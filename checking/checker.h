@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/13 19:35:57 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/19 17:16:23 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/19 17:33:23 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,5 @@ void		free_stack(t_stack **stack);
 void		dup_input(t_stack *stack);
 int			valid_input(char *argv);
 t_stack		*node_new(int value);
-t_stack		*ft_print_stack(t_stack *stack);
 
 #endif
