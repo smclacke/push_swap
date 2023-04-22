@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/25 19:56:56 by smclacke      #+#    #+#                  #
-#    Updated: 2023/04/18 17:49:03 by smclacke      ########   odam.nl          #
+#    Updated: 2023/04/19 21:16:42 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,12 +32,12 @@ SRCS			=	push_swap.c		\
 SRC_DIR			= src
 SRC				= $(addprefix $(SRC_DIR)/, $(SRCS))
 
-BONUS_SRCS		=	checker.c	\
-					init.c		\
-					push.c		\
+BONUS_SRCS		=	checker.c		\
+					init.c			\
+					push.c			\
 					rev_rotate.c	\
-					rotate.c	\
-					swap.c		\
+					rotate.c		\
+					swap.c			\
 					utils.c
 
 BONUS_SRC_DIR	= checking
