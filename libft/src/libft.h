@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/11 19:21:06 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/18 22:35:03 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/22 22:18:57 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,6 +143,8 @@ int		ft_ishex(int c);
 double	ft_atof(char *str);
 
 char	*ft_lower_str(char *str);
+
+char	*ft_upper_str(char *str);
 
 void	ft_putendl(char *s);
 

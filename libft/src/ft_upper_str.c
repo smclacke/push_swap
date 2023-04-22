@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lower_str.c                                     :+:    :+:            */
+/*   ft_upper_str.c                                     :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
+/*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/03/18 22:17:06 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/22 22:18:32 by smclacke      ########   odam.nl         */
+/*   Created: 2023/04/22 22:13:52 by smclacke      #+#    #+#                 */
+/*   Updated: 2023/04/22 22:18:38 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_lower_str(char *str)
+char	*ft_upper_str(char *str)
 {
 	int		len;
 	int		i;
@@ -21,7 +21,7 @@ char	*ft_lower_str(char *str)
 	len = ft_strlen(str);
 	while (i < len)
 	{
-		str[i] = ft_tolower(str[i]);
+		str[i] = ft_toupper(str[i]);
 		i++;
 	}
 	return (str);
