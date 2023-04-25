@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/13 19:26:34 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/19 15:52:12 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/25 22:43:34 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	handle_input(t_stack **stack_a, t_stack **stack_b)
 	while (buffer)
 	{
 		if (!operations(buffer, stack_a, stack_b))
-			ft_error();
+			ft_error("Error");
 		free (buffer);
 		buffer = get_next_line(0);
 	}

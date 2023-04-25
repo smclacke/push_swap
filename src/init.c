@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 17:45:35 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/19 16:51:18 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/25 22:44:07 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void	ft_stacking(char **arr, t_stack **stack_a)
 		argv_tmp = ft_atoi(arr[j]);
 		if ((argv_tmp < INT_MIN || argv_tmp > INT_MAX)
 			|| (!valid_input(arr[j])))
-			ft_error();
+			ft_error("Error");
 		j++;
 		var_to_stack(stack_a, argv_tmp);
 	}
@@ -78,7 +78,7 @@ t_stack	*create_stack(int argc, char **argv)
 	{
 		arr = ft_split(argv[i], ' ');
 		if (!arr || !arr[0])
-			ft_error();
+			ft_error("Error");
 		ft_stacking(arr, &stack_a);
 		ft_free_arr(arr);
 		i++;

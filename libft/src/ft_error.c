@@ -6,14 +6,14 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/15 16:38:03 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/18 17:38:15 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/25 22:42:14 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_error(void)
+void	ft_error(char *str)
 {
-	ft_putendl_fd("Error", 2);
+	ft_putendl(str);
 	exit(EXIT_FAILURE);
 }

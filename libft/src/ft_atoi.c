@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/24 15:39:55 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/18 17:44:56 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/25 22:40:14 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,6 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	if ((num * neg) > INT_MAX || (num * neg) < INT_MIN)
-		ft_error();
+		ft_error("Error");
 	return (num * neg);
 }

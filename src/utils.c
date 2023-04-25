@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/30 22:31:32 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/19 16:44:04 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/25 22:44:12 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	dup_input(t_stack *stack)
 		while (stack)
 		{
 			if (var->num == stack->num && var != stack)
-				ft_error();
+				ft_error("Error");
 			stack = stack->next;
 		}
 		var = var->next;
