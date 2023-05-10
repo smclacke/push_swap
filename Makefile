@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/25 19:56:56 by smclacke      #+#    #+#                  #
-#    Updated: 2023/04/19 21:16:42 by smclacke      ########   odam.nl          #
+#    Updated: 2023/05/10 02:59:03 by SarahLouise   ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ BONUS_SRCS		=	checker.c		\
 					utils.c
 
 BONUS_SRC_DIR	= checking
-BONUS_SRC		= %(addprefix $(BONUS_SRC_DIR)/, $(BONUS_SRCS))
+BONUS_SRC		= $(addprefix $(BONUS_SRC_DIR)/, $(BONUS_SRCS))
 
 OBJ_DIR			= obj
 OBJ				= $(addprefix $(OBJ_DIR)/, $(SRCS:%.c=%.o))
