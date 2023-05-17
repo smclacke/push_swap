@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/30 22:31:32 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/25 22:44:12 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/05/17 13:01:12 by SarahLouise   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ t_stack	*ft_print_stack(t_stack *stack)
 	list = stack;
 	while (list)
 	{
-		printf("node: %d | index: %d\n", list->num, list->index);
+		printf("node:		%d	|	index:		%d\n", list->num, list->index);
 		list = list->next;
 	}
 	return (stack);
