@@ -6,11 +6,11 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 18:12:07 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/19 02:50:19 by SarahLouise   ########   odam.nl         */
+/*   Updated: 2023/06/25 16:44:35 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker.h"
+#include "../include/checker.h"
 
 // SWAP:
 //		sa = (swap a) swap first two elements at the top of stack a

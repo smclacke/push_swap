@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   push_swap.h                                        :+:    :+:            */
+/*   checker.h                                          :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/03/31 22:14:28 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/19 16:45:55 by smclacke      ########   odam.nl         */
+/*   Created: 2023/04/13 19:35:57 by smclacke      #+#    #+#                 */
+/*   Updated: 2023/06/25 16:42:41 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#ifndef CHECKER_H
+# define CHECKER_H
 
-# include "../libft/src/libft.h"
-# include <unistd.h>
-# include <stdio.h>
+# include "push_swap.h"
 # include <stdlib.h>
-# include <limits.h>
+# include <stddef.h>
 
-typedef struct s_stack
-{
-	int					num;
-	int					index;
-	struct s_stack		*next;
-}		t_stack;
+//------------Checker-------------//
+int			operations(char *input, t_stack **stack_a, t_stack **stack_b);
+void		handle_input(t_stack **stack_a, t_stack **stack_b);
 
 //----------Operations-----------//
 // PUSH
@@ -52,23 +47,12 @@ void		list_index(t_stack *stack, int list_size);
 void		var_to_stack(t_stack **stack, int var);
 void		ft_stacking(char **arr, t_stack **stack_a);
 t_stack		*create_stack(int argc, char **argv);
-
-//-------------Sort--------------//
-void		small_sort(t_stack **stack);
-void		big_sort(t_stack **stack_a, t_stack **stack_b);
-void		ft_radix(t_stack **stack_a, t_stack **stack_b);
-void		ft_sort(t_stack **stack_a, t_stack **stack_b);
-
-//----------Sort_utils-----------//
 int			ft_sorted(t_stack **stack);
-int			ft_max_bits(int max_num);
-int			ft_max_num(t_stack *stack);
 
 //-------------Utils-------------//
 void		free_stack(t_stack **stack);
 void		dup_input(t_stack *stack);
 int			valid_input(char *argv);
 t_stack		*node_new(int value);
-t_stack		*ft_print_stack(t_stack *stack);
 
 #endif

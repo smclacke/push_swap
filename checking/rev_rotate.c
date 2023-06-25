@@ -6,11 +6,11 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 18:14:37 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/19 02:50:12 by SarahLouise   ########   odam.nl         */
+/*   Updated: 2023/06/25 16:44:28 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker.h"
+#include "../include/checker.h"
 
 // REVERSE ROTATE:
 //		rra = (reverse rotate a) shift down all elements of stack a by 1

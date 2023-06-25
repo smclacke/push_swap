@@ -6,11 +6,11 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/15 16:11:24 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/18 22:27:51 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/06/25 16:45:18 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../include/push_swap.h"
 
 int	ft_sorted(t_stack **stack)
 {

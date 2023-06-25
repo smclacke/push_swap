@@ -6,11 +6,11 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 22:14:34 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/19 17:17:10 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/06/25 16:45:08 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../include/push_swap.h"
 
 int	main(int argc, char **argv)
 {

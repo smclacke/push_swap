@@ -6,11 +6,11 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 17:45:35 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/25 22:43:44 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/06/25 16:44:21 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker.h"
+#include "../include/checker.h"
 
 void	list_index(t_stack *stack, int list_size)
 {

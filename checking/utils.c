@@ -6,11 +6,11 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/30 22:31:32 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/25 22:43:50 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/06/25 16:44:38 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker.h"
+#include "../include/checker.h"
 
 void	free_stack(t_stack **stack)
 {

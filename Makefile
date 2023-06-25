@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/25 19:56:56 by smclacke      #+#    #+#                  #
-#    Updated: 2023/05/10 02:59:03 by SarahLouise   ########   odam.nl          #
+#    Updated: 2023/06/25 16:43:43 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,8 @@ BONUS			= checker
 CFLAGS			= -Wall -Wextra -Werror
 CC				= gcc
 
-INCLUDES		= -Ilibft/src -Isrc
-BONUS_INC		= -Isrc/push_swap.h -Ichecking/checker.h
+INCLUDES		= -Iinclude -Iinclude/libft/src
+BONUS_INC		= -Iinclude/push_swap.h -Iinclude/checker.h
 
 SRCS			=	push_swap.c		\
 					push.c			\
@@ -65,15 +65,15 @@ all		: libft $(NAME)
 bonus	: libft $(NAME) $(BONUS)
 
 libft	:
-	@ make -C libft
+	@ make -C include/libft
 
 $(NAME)	: $(OBJ)
 	@ echo "${PURPLE} >>> push_swap compiling...${RESET}"
-	@ $(CC) $^ $(CFLAGS) $(INCLUDES) libft/libft.a -o $(NAME)
+	@ $(CC) $^ $(CFLAGS) $(INCLUDES) include/libft/libft.a -o $(NAME)
 	@ echo "${GREEN} ---> push_swap Made!${RESET}"
 
 $(BONUS): $(BONUS_OBJ)
-	@ $(CC) $^ $(CFLAGS) $(BONUS_INC) $(INCLUDES) libft/libft.a -o $(BONUS)
+	@ $(CC) $^ $(CFLAGS) $(BONUS_INC) $(INCLUDES) include/libft/libft.a -o $(BONUS)
 	@ echo "${RED}Checker in check${RESET}"
 
 $(OBJ_DIR)/%.o:$(SRC_DIR)/%.c
@@ -85,12 +85,12 @@ $(BONUS_OBJ_DIR)/%.o:$(BONUS_SRC_DIR)/%.c
 	@ $(CC) $(CFLAGS) $(INLCUDES) $(BONUS_INC) -c $< -o $@
 
 clean	:
-	@ make -C libft clean
+	@ make -C include/libft clean
 	@ rm -rf $(OBJ_DIR)
 	@ rm -rf $(BONUS_OBJ_DIR)
 
 fclean	: clean
-	@ make -C libft fclean
+	@ make -C include/libft fclean
 	@ rm -f $(NAME)
 	@ rm -f $(BONUS)
 	@ echo "${PURPLE} // push_swap fCleaned!${RESET}"

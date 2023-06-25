@@ -6,11 +6,11 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 18:12:07 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/18 22:54:42 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/06/25 16:45:23 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../include/push_swap.h"
 
 // SWAP:
 //		sa = (swap a) swap first two elements at the top of stack a
