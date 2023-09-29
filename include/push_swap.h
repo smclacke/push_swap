@@ -6,14 +6,14 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 22:14:28 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/06/25 16:42:49 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/09/29 16:39:53 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include "libft/src/libft.h"
+# include "libft/include/libft.h"
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
