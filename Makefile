@@ -6,14 +6,17 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/25 19:56:56 by smclacke      #+#    #+#                  #
-#    Updated: 2023/06/25 16:43:43 by smclacke      ########   odam.nl          #
+#    Updated: 2024/05/01 12:41:48 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			= push_swap
 BONUS			= checker
 
+
+MAKEFLAGS		= --no-print-directory
 CFLAGS			= -Wall -Wextra -Werror
+CFLAGS			+= -g -fsanitize=address
 CC				= gcc
 
 INCLUDES		= -Iinclude -Iinclude/libft/src
@@ -85,12 +88,11 @@ $(BONUS_OBJ_DIR)/%.o:$(BONUS_SRC_DIR)/%.c
 	@ $(CC) $(CFLAGS) $(INLCUDES) $(BONUS_INC) -c $< -o $@
 
 clean	:
-	@ make -C include/libft clean
 	@ rm -rf $(OBJ_DIR)
 	@ rm -rf $(BONUS_OBJ_DIR)
 
 fclean	: clean
-	@ make -C include/libft fclean
+	@ make $(MAKEFLAGS) -C include/libft fclean
 	@ rm -f $(NAME)
 	@ rm -f $(BONUS)
 	@ echo "${PURPLE} // push_swap fCleaned!${RESET}"
