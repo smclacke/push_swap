@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/25 19:56:56 by smclacke      #+#    #+#                  #
-#    Updated: 2024/05/01 12:41:48 by smclacke      ########   odam.nl          #
+#    Updated: 2024/05/07 16:48:27 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,6 @@ CFLAGS			+= -g -fsanitize=address
 CC				= gcc
 
 INCLUDES		= -Iinclude -Iinclude/libft/src
-BONUS_INC		= -Iinclude/push_swap.h -Iinclude/checker.h
 
 SRCS			=	push_swap.c		\
 					push.c			\
@@ -76,7 +75,7 @@ $(NAME)	: $(OBJ)
 	@ echo "${GREEN} ---> push_swap Made!${RESET}"
 
 $(BONUS): $(BONUS_OBJ)
-	@ $(CC) $^ $(CFLAGS) $(BONUS_INC) $(INCLUDES) include/libft/libft.a -o $(BONUS)
+	@ $(CC) $^ $(CFLAGS) $(INCLUDES) include/libft/libft.a -o $(BONUS)
 	@ echo "${RED}Checker in check${RESET}"
 
 $(OBJ_DIR)/%.o:$(SRC_DIR)/%.c
