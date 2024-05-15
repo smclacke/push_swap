@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 18:14:37 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/06/25 16:44:28 by smclacke      ########   odam.nl         */
+/*   Updated: 2024/05/15 16:15:38 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,15 @@ void	ft_rev_rot(t_stack **stack)
 void	ft_rra(t_stack **stack)
 {
 	ft_rev_rot(stack);
-	ft_putendl("rra");
 }
 
 void	ft_rrb(t_stack **stack)
 {
 	ft_rev_rot(stack);
-	ft_putendl("rrb");
 }
 
 void	ft_rrr(t_stack **stack_a, t_stack **stack_b)
 {
 	ft_rev_rot(stack_a);
 	ft_rev_rot(stack_b);
-	ft_putendl("rrr");
 }
